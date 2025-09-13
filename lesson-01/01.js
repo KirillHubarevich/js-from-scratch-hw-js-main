@@ -2,7 +2,7 @@
 // Результат присвойте переменной sum
 
 let n = 1; //Сумма чисел от 1 до 10 включительно
-const p = 10;
+const p = 20;
 let sum = 0;
 
 while (n <= p) {
@@ -11,6 +11,7 @@ while (n <= p) {
     sum += n;
     n++
 }
+console.log(sum);
 
 
 
