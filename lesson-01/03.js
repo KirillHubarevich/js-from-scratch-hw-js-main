@@ -11,8 +11,8 @@ let sum = 0;
 
 while (n <= p) {
     sum += n;
-    n = n + i;
     n = n% (n+i);
+    n = n + i;
 }
 console.log(sum);
 
