@@ -7,16 +7,35 @@
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
 
-let dice1 // your code
-let dice2 // your code
-let isWinningDouble // your code
+let dice1 = 0;
+let dice2 = 0;
+let isWinningDouble = true;
+let numberPred = 6;
 
-/*
-console.log('Первый бросок: ' + dice1)
-console.log('Второй бросок: ' + dice2)
-if (isWinningDouble) {
-  console.log('Выигрышный дубль!')
-} else {
-  console.log('Не выигрышный дубль.')
+dice1 = Math.floor(Math.random() * 6);
+dice2 = Math.floor(Math.random() * 6);
+dice1 +=1;
+dice2 +=1;
+
+    if ((dice1 === dice2) && (dice1 && dice2 > 3) && (dice1 && dice2 <= numberPred)) {
+    isWinningDouble = true;
+    console.log(dice1, dice2);
+    console.log(isWinningDouble,'Выигрышный дубль!')
+} else
+    {
+        isWinningDouble = false
+        console.log(dice1, dice2)
+        console.log(isWinningDouble,'Не выигрышный дубль.')
+
+
+
+// console.log('Первый бросок: ' + dice1)
+// console.log('Второй бросок: ' + dice2)
+// if (isWinningDouble) {
+//   console.log('Выигрышный дубль!')
+// } else {
+//   console.log('Не выигрышный дубль.')
 }
-*/
+
+
+// это будет цикл
