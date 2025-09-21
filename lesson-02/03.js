@@ -22,13 +22,13 @@
 // if ((score <= A) && (score > B)) {grade = A
 // }
 
-let score = 70;
+let score = 80;
 let grade = 0;
 
 if ((score <= 49) && (score >= 0)) {
         grade = 'F'
 }
-else if ((score <= 69) && (score >= 50)) {ёg
+else if ((score <= 69) && (score >= 50)) {
         grade = 'D'
 }
 else if ((score <= 79) && (score >= 70)) {
