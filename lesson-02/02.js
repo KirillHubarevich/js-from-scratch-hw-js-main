@@ -25,7 +25,7 @@ dice2 +=1;
     {
         isWinningDouble = false
         console.log(dice1, dice2)
-        console.log(isWinningDouble,'Не выигрышный дубль.')
+        console.log(isWinningDouble, 'Не выигрышный дубль.')
 
 
 
