@@ -22,9 +22,9 @@
 // if ((score <= A) && (score > B)) {grade = A
 // }
 
-let score = 0;
+let score = 50;
 let grade
-score = prompt('Введите количество баллов ученика')
+// score = prompt('Введите количество баллов ученика')
 
 if ((score <= 49) && (score >= 0)) {
         grade = 'F'
