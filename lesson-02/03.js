@@ -22,25 +22,27 @@
 // if ((score <= A) && (score > B)) {grade = A
 // }
 
-let score = 80;
-let grade = 0;
+let score = 0;
+let grade
+score = prompt('Введите количество баллов ученика')
 
 if ((score <= 49) && (score >= 0)) {
         grade = 'F'
 }
-else if ((score <= 69) && (score >= 50)) {
+if ((score <= 69) && (score >= 50)) {
         grade = 'D'
 }
-else if ((score <= 79) && (score >= 70)) {
+if ((score <= 79) && (score >= 70)) {
         grade = 'C'
 }
-else if ((score <= 89) && (score >= 80)) {
+if ((score <= 89) && (score >= 80)) {
         grade = 'B'
     }
-else if ((score <= 100) && (score >= 90)) {
+if ((score <= 100) && (score >= 90)) {
         grade = 'A'
 }
-     console.log('Ваша оценка', grade)
+     console.log('Его оценка', grade)
+
 
 
 
