@@ -22,28 +22,28 @@
 // if ((score <= A) && (score > B)) {grade = A
 // }
 
-let score = 50;
-let grade
+// let score = 0;
+// let grade
 // score = prompt('Введите количество баллов ученика')
-
-if ((score <= 49) && (score >= 0)) {
-        grade = 'F'
-}
-if ((score <= 69) && (score >= 50)) {
-        grade = 'D'
-}
-if ((score <= 79) && (score >= 70)) {
-        grade = 'C'
-}
-if ((score <= 89) && (score >= 80)) {
-        grade = 'B'
-    }
-if ((score <= 100) && (score >= 90)) {
-        grade = 'A'
-}
-     console.log('Его оценка', grade)
-
-
+//
+// if ((score <= 49) && (score >= 0)) {
+//         grade = 'F'
+// }
+// if ((score <= 69) && (score >= 50)) {
+//         grade = 'D'
+// }
+// if ((score <= 79) && (score >= 70)) {
+//         grade = 'C'
+// }
+// if ((score <= 89) && (score >= 80)) {
+//         grade = 'B'
+//     }
+// if ((score <= 100) && (score >= 90)) {
+//         grade = 'A'
+// }
+//      console.log('Его оценка', grade)
 
 
+// let isLoggedIn = true;
+// const status = XXX
 

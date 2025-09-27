@@ -9,16 +9,25 @@
 
 // тестовые данные (значения можно менять)
 
-const isAdmin = true
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass = false
+// const isAdmin = true
+// const isVerifiedUser = true
+// const hasSpecialPermission = true
+// const hasTemporaryPass = false
+//
+// let isAccess;
+// if ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) {
+//     isAccess = true
+// } else {
+//     isAccess = false
+// }
 
-let isAccess;
-if ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) {
-    isAccess = true
-} else {
-    isAccess = false
+var y = 10
+
+if (true) {
+    var y = 100
+    console.log(y)
 }
+
+console.log(y)
 
 
