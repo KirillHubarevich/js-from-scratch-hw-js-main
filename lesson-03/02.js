@@ -8,12 +8,12 @@ let b
 
 function isEven(a) {
     b = a%(x)
-    if (b === n)
+    if (b === n || b === -n)
        even = false
     else even = true
     return even}
 
-isEven(15)
+isEven(-10)
 console.log(even)
 
 
