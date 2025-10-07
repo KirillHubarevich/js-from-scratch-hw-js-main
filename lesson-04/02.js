@@ -15,14 +15,49 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-const array = [1, 2 , 3 , 1 , 2]
 function findUniqueElements(array) {
     const newArray = []
     for (let i = 0; i < array.length; i++) {
-       if (array[i] === i + 1) {
-           newArray.push(array[i])
-       }
-    } return newArray
+        const isInclude = newArray.includes(array[i])
+        if (!isInclude) {
+            newArray.push(array[i])
+        }
+    }
+    return newArray;
 }
-let arrayed = findUniqueElements(array)
-console.log(arrayed)
+const x = findUniqueElements([1, 2,2, 4, 4, 3, 3, 5, 6, 11])
+console.log(x)
+
+
+
+
+
+// function findUniqueElementsWithSet(array) {
+//     const setStorage = new Set ()
+//     for (let i = 0; i < array.length; i++) {
+//         setStorage.add(array[i])
+//     }
+//     return [...setStorage]
+// }
+
+
+
+
+
+// const array = []
+// function findUniqueElements(array) {
+//     const newArray = []
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === array [i]) {
+//             return array
+//         }
+//         if (array [i] !== array[i]) {
+//             return newArray.push(array[i])
+//         }
+//     }
+// }
+// const x = findUniqueElements([1, 2, 2, 3, 3, 4, 5])
+// console.log(x)
+
+
+
