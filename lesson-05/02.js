@@ -42,6 +42,7 @@ function updateGallery(gallery, title, newValue) {
         }
         if (key !== title) {
             let newString = Object.assign(gallery, {[title]: newValue});
+            console.log(newString);
         }
     }
 }
