@@ -24,22 +24,26 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const newNumbers = []
+// const filter = () => {}
+
+const numbers = [1, 2, 3, 4, 5, 6, 7 , 8, 9, 10, 11]
+const newNums = []
 const filter = (array, callback) => {
     for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        const index = array.indexOf(element);
-        callback(element, index);
-    } return numbers
+        let element = array[i]
+        let index = array.indexOf(element)
+        if (callback) {
+            callback(element, index)
+            newNums.push(element)
+        }
+    } return newNums
 }
 
-const oddNumbers = filter (numbers, (element, index) => {
-    return newNumbers.push (element < 10)
+const oddNumbers = filter(numbers, (element, index) => {
+    return element % 2 !== 0
 });
+
 console.log(oddNumbers)
-
-
 
 
 
