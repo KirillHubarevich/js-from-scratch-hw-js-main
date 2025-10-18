@@ -24,92 +24,22 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
 
-// const filter = () => {}
+
 
 const numbers = [1, 2, 3, 4, 5, 6, 7 , 8, 9, 10, 11]
-const newNums = []
 const filter = (array, callback) => {
+    const newNumbers = []
     for (let i = 0; i < array.length; i++) {
-        let element = array[i]
-        let index = array.indexOf(element)
-        if (callback) {
-            callback(element, index)
-            newNums.push(element)
+        const element = array[i]
+        if (callback(element, i)) {
+            newNumbers.push(element)
         }
-    } return newNums
+    } return newNumbers
 }
 
-const oddNumbers = filter(numbers, (element, index) => {
+
+const filteredNumbers = filter (numbers, (element, index) => {
     return element % 2 !== 0
 });
-
-console.log(oddNumbers)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     if (book.price < 30) {
-//         console.log(`${book.title} : ${book.price}`);
-//     }
-// }
-
-// processBook(favoriteBooks, b => console.log (b.author));
-
-// const needNumbers = numbers.filter (number => number < 5)
-// console.log(needNumbers)
-
-
-
-// // b = book
-//     const printCheapBook = (book) => {
-//         if (book.price < 30) {
-//             console.log(`${book.title} : ${book.price}`);
-//         }
-//     }
-// // processBook(favoriteBooks, printCheapBook);
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(filteredNumbers)
 
