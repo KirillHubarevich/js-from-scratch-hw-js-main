@@ -29,6 +29,7 @@ const newNumbers = []
 const map = (array, callback) => {
     for (let i = 0; i < array.length; i++) {
         const element = array[i]
+        callback(element)
         if (callback(element, i)) {
             newNumbers.push(callback(element, i))
         }
