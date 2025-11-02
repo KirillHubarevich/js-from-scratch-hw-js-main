@@ -4,7 +4,10 @@
  */
 
 function isNumeric(str) {
-  // your code
+    if (str == Number(str) && str !== ' ') {
+        return true
+    }
+    return false
 }
 
 // console.log(isNumeric("123")) // Ожидаемый результат: true
@@ -12,3 +15,4 @@ function isNumeric(str) {
 // console.log(isNumeric("123abc")) // Ожидаемый результат: false
 // console.log(isNumeric("abc")) // Ожидаемый результат: false
 // console.log(isNumeric(" ")) // Ожидаемый результат: false
+// console.log(isNumeric("123.56.cbd"))
