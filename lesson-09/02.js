@@ -56,5 +56,6 @@ startButton.addEventListener('click', () => {
 cancelButton.addEventListener('click', () => {
     if (!isTimerStarted) return
     clearInterval(timerId)
+    isTimerStarted = false
     countdownDisplay.textContent = 'Отменено'
 })
