@@ -1,5 +1,5 @@
 /*
-  Изучите файл index.html (секцию "Урок 8"). Разметка уже написано - нужно добавить только js-код.
+  Изучите файл index.html (секцию "Урок 8"). Разметка уже написана - нужно добавить только js-код.
 
   Функционал магазина питомцев почти готов. Не хватает возможности добавлять питомцев в корзину.
   Ваша задача написать обработчик события, который будет добавлять питомцев в корзину.
@@ -64,7 +64,20 @@ function updateCartDisplay() {
 
 clearCartButton.addEventListener('click', function () {
   cart.length = 0
-  updateCartDisplay()
+    updateCartDisplay()
 })
 
-// Твой код:
+petShop.addEventListener('click', function () {
+    const petId = event.target.id
+    cart.push(petId)
+        updateCartDisplay()
+
+})
+
+petShop.addEventListener('click', function () {
+    if (cart.length > 3) {
+        messageBox.textContent = 'Вы не можете добавить более 3 питомцев'
+        cart.length = 3
+        updateCartDisplay()
+    }
+})
